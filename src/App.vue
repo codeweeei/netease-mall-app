@@ -4,6 +4,6 @@
   </div>
 </template>
 
-<style>
-
+<style scoped>
+@import url("./assets/css/normalize.css");
 </style>
