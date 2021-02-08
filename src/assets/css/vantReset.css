@@ -1,0 +1,13 @@
+.van-field {
+  padding-top: 0;
+  padding-left: 0.2rem;
+  padding-bottom: 0;
+  border: 0;
+  background-color: #f4f4f4;
+  height: 0.56rem;
+  border-radius: 4px;
+  color: #666666
+}
+.van-field .van-field__body .van-field__control{
+  color: #333;
+}

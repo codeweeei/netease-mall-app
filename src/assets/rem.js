@@ -5,18 +5,20 @@
   var metaEl = doc.querySelector('meta[name="viewport"]') //获取name=viewport的meta对象
   var tid
   //设置像素比
-  var devicePixelRatio = win.devicePixelRatio //2
-  //缩放比例为1 / devicePixelRatio = 0，5
+  var devicePixelRatio = Math.floor(win.devicePixelRatio) //2
+  // console.log(devicePixelRatio)
+  //缩放比例为1 / devicePixelRatio = 0.5
   //var scale = 1 / devicePixelRatio
   //根据缩放比例设置meta
   metaEl.setAttribute(
     "content",
-    "initial-scale=.5,maximum-scale=.5,minimum-scale=.5,user-scalable=no"
+    "initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"
   )
   //重置rem值
   function refreshRem() {
     //获取html宽度
-    var width = docEl.getBoundingClientRect().width
+    var width = Math.floor(docEl.getBoundingClientRect().width)
+    console.log(width)
     //获取浏览器当前使用设备的信息
     var ua = navigator.userAgent.toLowerCase()
     //在ua中找不到iPad时执行，即在普通手机中执行
@@ -25,7 +27,7 @@
         width = 750 * 2
       }
     }
-    var rem = width / 10 // 75
+    var rem = width / 7.5// 50
     //设置html根标签的字体大小
     docEl.style.fontSize = rem + "px"
   }

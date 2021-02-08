@@ -1,15 +1,25 @@
 <template>
   <div class="home">
-    <van-button type="primary">主要按钮</van-button>
+    <top-search-input></top-search-input>
   </div>
 </template>
 
 <script>
+import topSearchInput from "@/components/content/topSearchInput"
 export default {
-  name:"Home"
+  name:"Home",
+  data() {
+    return {
+
+    }
+  },
+  components:{
+    topSearchInput
+  }
 }
 </script>
 
-<style scoped>
+<style  scoped>
+
 
 </style>
