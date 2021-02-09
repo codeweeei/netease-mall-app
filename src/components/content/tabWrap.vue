@@ -1,8 +1,9 @@
 <template>
   <div class="tabWrap">
-    <van-tabs v-model="active" swipeable>
-      <!-- <van-tab v-for="index in tabTitle :title="index"> -->
-      <!-- </van-tab> -->
+    <van-tabs v-model="active" swipeable class="tabList">
+      <van-tab v-for="(n,index) in tabsList" :title="n" :key="index">
+        {{ n }}
+      </van-tab>
     </van-tabs>
   </div>
 </template>
@@ -13,12 +14,21 @@ export default {
   data() {
     return {
       active:"",
-      tabTitle:["推荐","居家生活","服饰鞋包","美食酒水","个户清洁","母婴亲子","运动旅行","数码家电","严选全国"]
+      tabsList: []
     }
+  },
+  created() {
+    this.$http.get("/tab-wrap").then(_d => {
+      console.log(_d.data)
+      this.tabsList = _d.data
+    })
   },
 }
 </script>
 
 <style scoped>
-
+  @import url("../../assets/css/vantReset.css");
+  .tabList{
+    font-size: .28rem;
+  }
 </style>

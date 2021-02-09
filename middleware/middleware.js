@@ -23,6 +23,7 @@ app.all("*", function(req, res, next) {
   }
 });
 
+//获取输入框匹配关键字商品的api
 app.get("/search", (req, res) => {
   let tempGoods = [
     {
@@ -52,6 +53,22 @@ app.get("/search", (req, res) => {
       filterGoods.length > 0 ? filterGoods : { msg: "没有找到结果" };
     res.send(resultGoods);
   }
+});
+
+//获取tabwarp的api
+app.get("/tab-wrap", (req, res) => {
+  let tabTitle = [
+    "推荐",
+    "居家生活",
+    "服饰鞋包",
+    "美食酒水",
+    "个户清洁",
+    "母婴亲子",
+    "运动旅行",
+    "数码家电",
+    "严选全国"
+  ];
+  res.send(tabTitle)
 });
 
 app.listen(3344, () => {

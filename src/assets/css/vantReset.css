@@ -11,3 +11,7 @@
 .van-field .van-field__body .van-field__control{
   color: #333;
 }
+
+.tabList .van-tab{
+  font-size: .28rem;
+}
