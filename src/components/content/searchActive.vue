@@ -6,7 +6,7 @@
         clearable
         left-icon="search"
         placeholder="午夜饭4折起"
-        @input="getInputValue"
+        @input="getGoods"
       />
     </van-cell-group>
     <div class="cancel" @click="cancel">
@@ -21,16 +21,28 @@ export default {
   data() {
     return {
       inputValue:"",
+      goodsList:[]
     }
   },
   methods: {
     cancel(){
       this.$router.push("/")
     },
-    getInputValue(){
-      console.log(this.inputValue)
+    getGoods(){
+      this.$http.get("/search",{
+        //将输入框里的值（关键字）通过params键值对的方式传递给后台
+        params:{
+          search_key:this.inputValue
+        }
+      })
+      .then(_d => {
+        console.log(_d.data)
+      })
     }
   },
+  // created() {
+  //   this.getGoods()
+  // },
 }
 </script>
 
