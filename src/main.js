@@ -19,7 +19,9 @@ import {
   Tabs,
   Swipe,
   SwipeItem,
-  Lazyload
+  Lazyload,
+  Grid,
+  GridItem
 } from "vant";
 
 Vue.use(Button)
@@ -32,7 +34,9 @@ Vue.use(Button)
   .use(Tabs)
   .use(Swipe)
   .use(SwipeItem)
-  .use(Lazyload);
+  .use(Lazyload)
+  .use(Grid)
+  .use(GridItem);
 
 //将http挂载在Vue的prototype上
 Vue.prototype.$http = http;

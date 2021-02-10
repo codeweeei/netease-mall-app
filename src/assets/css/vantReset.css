@@ -6,12 +6,25 @@
   background-color: #f4f4f4;
   height: 0.56rem;
   border-radius: 4px;
-  color: #666666
+  color: #666666;
 }
-.van-field .van-field__body .van-field__control{
+.van-field .van-field__body .van-field__control {
   color: #333;
 }
 
-.tabList .van-tab{
-  font-size: .28rem;
+.tabList .van-tab {
+  font-size: 0.28rem;
+}
+
+.goodsColumn .van-icon .van-icon__image{
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.goodsColumn .van-grid-item__content .van-grid-item__text{
+  margin-top: .1rem;
+  text-align: center;
+  font-size: .24rem;
+  line-height: .36rem;
+  white-space: nowrap;
 }

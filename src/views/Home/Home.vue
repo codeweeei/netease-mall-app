@@ -8,7 +8,8 @@
     <swipe></swipe>
     <!-- indexServicePolicy -->
     <index-service-policy></index-service-policy>
-    <div>111</div>
+    <!-- goodsColumn -->
+    <goods-column></goods-column>
   </div>
 </template>
 
@@ -17,6 +18,7 @@ import topSearchInput from "@/components/content/topSearchInput"
 import tabWrap from "@/components/content/tabWrap"
 import swipe from "@/components/content/swipe"
 import indexServicePolicy from "@/components/content/indexServicePolicy"
+import goodsColumn from "@/components/content/goodsColumn"
 export default {
   name:"Home",
   data() {
@@ -28,7 +30,8 @@ export default {
     topSearchInput,
     tabWrap,
     swipe,
-    indexServicePolicy
+    indexServicePolicy,
+    goodsColumn
   }
 }
 </script>
