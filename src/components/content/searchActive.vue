@@ -46,27 +46,28 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 @import url("../../assets/css/vantReset.css");
-  .search-active{
-    padding: 0 .3rem;
-    display: flex;
-    box-sizing: content-box;
-    z-index: 1;
-    margin: auto;
-    overflow: hidden;
-    height: .88rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .search-active .search-text{
+.search-active{
+  background: #fff;
+  padding: 0 .3rem;
+  display: flex;
+  box-sizing: content-box;
+  z-index: 1;
+  margin: auto;
+  overflow: hidden;
+  height: .88rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .search-text{
     width: 6rem;
   }
-  .search-active .cancel{
+  .cancel{
     margin-left: .3rem;
     font-size: .28rem;
     display: flex;
     align-items: center;
   }
+}
 </style>

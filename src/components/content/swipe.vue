@@ -28,12 +28,12 @@ export default {
 }
 </script>
 
-<style scoped>
-  .swipeWarp{
-    height: 2.96rem;
-    width: 100%;
-  }
-  .my-swipe .van-swipe-item {
+<style lang="less" scoped>
+.swipeWarp{
+  background: #fff;
+  height: 2.96rem;
+  width: 100%;
+  .van-swipe-item{
     color: #fff;
     font-size: 20px;
     height: 2.96rem;
@@ -41,13 +41,14 @@ export default {
     text-align: center;
     background-color: #fff;
     position: relative;
+    img{
+      width: 100%;
+      height: auto;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
-  .my-swipe .van-swipe-item img{
-    width: 100%;
-    height: auto;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+}
 </style>

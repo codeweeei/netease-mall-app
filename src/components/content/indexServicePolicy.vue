@@ -29,8 +29,10 @@ export default {
 }
 </script>
 
-<style scoped>
-  .m-indexServicePolicy .g-grow{
+<style lang="less" scoped>
+.m-indexServicePolicy{
+  background: #fff;
+  .g-grow{
     box-sizing: border-box;
     width: 100%;
     height: .72rem;
@@ -40,45 +42,85 @@ export default {
     flex-flow: row nowrap;
     align-items: center;
     zoom: 1;
+    li{
+      flex: 1;
+      float: left;
+      height: auto;
+      box-sizing: border-box;
+      a{
+        display: inline-block;
+        vertical-align: middle;
+      }
+      span{
+        font-size: .24rem;
+        color: #333;
+        margin-left: .08rem;
+        line-height: .32rem;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      i{
+        width: .32rem;
+        height: .32rem;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      &:nth-child(1) i{
+          background-image: url("https://yanxuan.nosdn.127.net/a03dd909803b9ac032eba58b7253a2f6.png");
+          background-size: 100% 100%;
+          background-position: 50%;
+        }
+        &:nth-child(2) i{
+          background-image: url("https://yanxuan.nosdn.127.net/2d0402ffcd52b3ec3b07422681c42a89.png");
+          background-size: 100% 100%;
+          background-position: 50%;
+        }
+        &:nth-child(3) i{
+          background-image: url("https://yanxuan.nosdn.127.net/eb61ee48e8942dbd1784c9ee75ebe955.png");
+          background-size: 100% 100%;
+          background-position: 50%;
+        }
+    }
   }
-  .m-indexServicePolicy .g-grow li{
-    flex: 1;
-    float: left;
-    height: auto;
-    box-sizing: border-box;
+}
+  // .m-indexServicePolicy .g-grow li{
+  //   flex: 1;
+  //   float: left;
+  //   height: auto;
+  //   box-sizing: border-box;
 
-  }
-  .m-indexServicePolicy .g-grow li a{
-    display: inline-block;
-    vertical-align: middle;
-  }
-  .m-indexServicePolicy .g-grow li span{
-    font-size: .24rem;
-    color: #333;
-    margin-left: .08rem;
-    line-height: .32rem;
-    display: inline-block;
-    vertical-align: middle;
-  }
-  .m-indexServicePolicy .g-grow li i{
-    width: .32rem;
-    height: .32rem;
-    display: inline-block;
-    vertical-align: middle;
-  }
-  .m-indexServicePolicy .g-grow li:nth-child(1) i{
-    background-image: url("https://yanxuan.nosdn.127.net/a03dd909803b9ac032eba58b7253a2f6.png");
-    background-size: 100% 100%;
-    background-position: 50%;
-  }
-  .m-indexServicePolicy .g-grow li:nth-child(2) i{
-    background-image: url("https://yanxuan.nosdn.127.net/2d0402ffcd52b3ec3b07422681c42a89.png");
-    background-size: 100% 100%;
-    background-position: 50%;
-  }
-  .m-indexServicePolicy .g-grow li:nth-child(3) i{
-    background-image: url("https://yanxuan.nosdn.127.net/eb61ee48e8942dbd1784c9ee75ebe955.png");
-    background-size: 100% 100%;
-    background-position: 50%;
-  }
+  // }
+  // .m-indexServicePolicy .g-grow li a{
+  //   display: inline-block;
+  //   vertical-align: middle;
+  // }
+  // .m-indexServicePolicy .g-grow li span{
+  //   font-size: .24rem;
+  //   color: #333;
+  //   margin-left: .08rem;
+  //   line-height: .32rem;
+  //   display: inline-block;
+  //   vertical-align: middle;
+  // }
+  // .m-indexServicePolicy .g-grow li i{
+  //   width: .32rem;
+  //   height: .32rem;
+  //   display: inline-block;
+  //   vertical-align: middle;
+  // }
+  // .m-indexServicePolicy .g-grow li:nth-child(1) i{
+  //   background-image: url("https://yanxuan.nosdn.127.net/a03dd909803b9ac032eba58b7253a2f6.png");
+  //   background-size: 100% 100%;
+  //   background-position: 50%;
+  // }
+  // .m-indexServicePolicy .g-grow li:nth-child(2) i{
+  //   background-image: url("https://yanxuan.nosdn.127.net/2d0402ffcd52b3ec3b07422681c42a89.png");
+  //   background-size: 100% 100%;
+  //   background-position: 50%;
+  // }
+  // .m-indexServicePolicy .g-grow li:nth-child(3) i{
+  //   background-image: url("https://yanxuan.nosdn.127.net/eb61ee48e8942dbd1784c9ee75ebe955.png");
+  //   background-size: 100% 100%;
+  //   background-position: 50%;
+  // }
 </style>

@@ -58,6 +58,6 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 @import url(../../assets/css/vantReset.css);
 </style>
