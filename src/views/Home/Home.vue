@@ -10,6 +10,8 @@
     <index-service-policy></index-service-policy>
     <!-- goodsColumn -->
     <goods-column></goods-column>
+    <!-- 大促活动 bigPromotion -->
+    <big-promotion></big-promotion>
   </div>
 </template>
 
@@ -19,6 +21,7 @@ import tabWrap from "@/components/content/tabWrap"
 import swipe from "@/components/content/swipe"
 import indexServicePolicy from "@/components/content/indexServicePolicy"
 import goodsColumn from "@/components/content/goodsColumn"
+import bigPromotion from "@/components/content/bigPromotion"
 export default {
   name:"Home",
   data() {
@@ -31,7 +34,8 @@ export default {
     tabWrap,
     swipe,
     indexServicePolicy,
-    goodsColumn
+    goodsColumn,
+    bigPromotion
   }
 }
 </script>
