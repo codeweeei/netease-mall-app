@@ -12,6 +12,8 @@
     <goods-column></goods-column>
     <!-- 大促活动 bigPromotion -->
     <big-promotion></big-promotion>
+    <!-- freshmenModule 新人活动模块 -->
+    <freshmen-module></freshmen-module>
   </div>
 </template>
 
@@ -22,6 +24,7 @@ import swipe from "@/components/content/swipe"
 import indexServicePolicy from "@/components/content/indexServicePolicy"
 import goodsColumn from "@/components/content/goodsColumn"
 import bigPromotion from "@/components/content/bigPromotion"
+import freshmenModule from "./activities/freshmenModule"
 export default {
   name:"Home",
   data() {
@@ -35,7 +38,8 @@ export default {
     swipe,
     indexServicePolicy,
     goodsColumn,
-    bigPromotion
+    bigPromotion,
+    freshmenModule
   }
 }
 </script>
