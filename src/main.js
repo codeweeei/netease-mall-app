@@ -8,7 +8,19 @@ import http from "../http";
 
 Vue.config.productionTip = false;
 
-import { Button, Col, Row, Icon, Field, CellGroup, Tab, Tabs } from "vant";
+import {
+  Button,
+  Col,
+  Row,
+  Icon,
+  Field,
+  CellGroup,
+  Tab,
+  Tabs,
+  Swipe,
+  SwipeItem,
+  Lazyload
+} from "vant";
 
 Vue.use(Button)
   .use(Col)
@@ -17,7 +29,10 @@ Vue.use(Button)
   .use(Field)
   .use(CellGroup)
   .use(Tab)
-  .use(Tabs);
+  .use(Tabs)
+  .use(Swipe)
+  .use(SwipeItem)
+  .use(Lazyload);
 
 //将http挂载在Vue的prototype上
 Vue.prototype.$http = http;

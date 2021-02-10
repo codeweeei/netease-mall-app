@@ -2,15 +2,18 @@
   <div class="tabWrap">
     <van-tabs v-model="active" swipeable class="tabList">
       <van-tab v-for="(n,index) in tabsList" :title="n" :key="index">
-        {{ n }}
       </van-tab>
     </van-tabs>
   </div>
 </template>
 
 <script>
+
 export default {
   name:"tabWrap",
+  components:{
+
+  },
   data() {
     return {
       active:"",
@@ -19,7 +22,7 @@ export default {
   },
   created() {
     this.$http.get("/tab-wrap").then(_d => {
-      console.log(_d.data)
+      // console.log(_d.data)
       this.tabsList = _d.data
     })
   },
