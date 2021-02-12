@@ -59,5 +59,5 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import url(../../assets/css/vantReset.css);
+
 </style>

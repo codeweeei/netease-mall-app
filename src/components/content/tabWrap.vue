@@ -30,7 +30,6 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import url("../../assets/css/vantReset.css");
 .tabList{
   font-size: .28rem;
 }

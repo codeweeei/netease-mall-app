@@ -47,7 +47,6 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import url("../../assets/css/vantReset.css");
 .search-active{
   background: #fff;
   padding: 0 .3rem;

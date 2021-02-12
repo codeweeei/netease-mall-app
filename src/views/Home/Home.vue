@@ -14,6 +14,8 @@
     <big-promotion></big-promotion>
     <!-- freshmenModule 新人活动模块 -->
     <freshmen-module></freshmen-module>
+    <!-- 类目热销榜 -->
+    <category-host-sell-module></category-host-sell-module>
   </div>
 </template>
 
@@ -25,6 +27,7 @@ import indexServicePolicy from "@/components/content/indexServicePolicy"
 import goodsColumn from "@/components/content/goodsColumn"
 import bigPromotion from "@/components/content/bigPromotion"
 import freshmenModule from "./activities/freshmenModule"
+import categoryHostSellModule from "./activities/categoryHostSellModule"
 export default {
   name:"Home",
   data() {
@@ -39,7 +42,8 @@ export default {
     indexServicePolicy,
     goodsColumn,
     bigPromotion,
-    freshmenModule
+    freshmenModule,
+    categoryHostSellModule
   }
 }
 </script>

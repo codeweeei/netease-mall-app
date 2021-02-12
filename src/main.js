@@ -1,4 +1,5 @@
 import "./assets/css/reset.css";
+import "./assets/css/vantReset.css"
 import "./assets/rem";
 import Vue from "vue";
 import App from "./App.vue";
