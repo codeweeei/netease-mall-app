@@ -18,6 +18,10 @@
     <category-host-sell-module></category-host-sell-module>
     <!-- 新品首发模块 -->
     <new-item-module></new-item-module>
+    <!-- 超值专区 -->
+    <light-shopping-module></light-shopping-module>
+    <!-- 版权模块 -->
+    <copyright></copyright>
   </div>
 </template>
 
@@ -31,6 +35,8 @@ import bigPromotion from "@/components/content/bigPromotion"
 import freshmenModule from "./activities/freshmenModule"
 import categoryHostSellModule from "./activities/categoryHostSellModule"
 import newItemModule from "./activities/newItemModule"
+import lightShoppingModule from "./activities/lightShoppingModule"
+import copyright from "./activities/copyright"
 export default {
   name:"Home",
   data() {
@@ -47,7 +53,9 @@ export default {
     bigPromotion,
     freshmenModule,
     categoryHostSellModule,
-    newItemModule
+    newItemModule,
+    lightShoppingModule,
+    copyright
   }
 }
 </script>
