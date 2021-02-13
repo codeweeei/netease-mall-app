@@ -22,6 +22,7 @@ export default {
 
 <style lang="less" scoped>
   .copyright{
+    margin-bottom: 1rem;
     border-top: 1px solid rgba(0,0,0,.15);
     background-color: #414141;
     .content{

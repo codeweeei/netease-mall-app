@@ -24,7 +24,8 @@ import {
   Grid,
   GridItem,
   Tabbar,
-  TabbarItem
+  TabbarItem,
+  Sticky
 } from "vant";
 
 Vue.use(Button)
@@ -41,7 +42,8 @@ Vue.use(Button)
   .use(Grid)
   .use(GridItem)
   .use(Tabbar)
-  .use(TabbarItem);
+  .use(TabbarItem)
+  .use(Sticky);
 
 //将http挂载在Vue的prototype上
 Vue.prototype.$http = http;

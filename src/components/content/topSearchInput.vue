@@ -1,12 +1,14 @@
 <template>
-  <div class="topSearchInput">
-    <img src="../../assets/top-logo.png"  class="logo">
-    <div class="searchInput" @click="search">
-      <i><van-icon name="search" class="icon"/></i>
-      <span class="palcehoder">搜索商品，共66666件好物</span>
+  <van-sticky>
+    <div class="topSearchInput">
+      <img src="../../assets/top-logo.png"  class="logo">
+      <div class="searchInput" @click="search">
+        <i><van-icon name="search" class="icon"/></i>
+        <span class="palcehoder">搜索商品，共66666件好物</span>
+      </div>
+      <div class="loginBtn">登录</div>
     </div>
-    <div class="loginBtn">登录</div>
-  </div>
+  </van-sticky>
 </template>
 
 <script>
