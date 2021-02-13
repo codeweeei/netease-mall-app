@@ -22,6 +22,8 @@
     <light-shopping-module></light-shopping-module>
     <!-- 版权模块 -->
     <copyright></copyright>
+    <!-- tabbar -->
+    <tabbar></tabbar>
   </div>
 </template>
 
@@ -32,6 +34,7 @@ import swipe from "@/components/content/swipe"
 import indexServicePolicy from "@/components/content/indexServicePolicy"
 import goodsColumn from "@/components/content/goodsColumn"
 import bigPromotion from "@/components/content/bigPromotion"
+import tabbar from "@/components/content/tabbar"
 import freshmenModule from "./activities/freshmenModule"
 import categoryHostSellModule from "./activities/categoryHostSellModule"
 import newItemModule from "./activities/newItemModule"
@@ -55,7 +58,8 @@ export default {
     categoryHostSellModule,
     newItemModule,
     lightShoppingModule,
-    copyright
+    copyright,
+    tabbar
   }
 }
 </script>

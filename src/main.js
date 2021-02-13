@@ -1,5 +1,5 @@
 import "./assets/css/reset.css";
-import "./assets/css/vantReset.css"
+import "./assets/css/vantReset.css";
 import "./assets/rem";
 import Vue from "vue";
 import App from "./App.vue";
@@ -22,7 +22,9 @@ import {
   SwipeItem,
   Lazyload,
   Grid,
-  GridItem
+  GridItem,
+  Tabbar,
+  TabbarItem
 } from "vant";
 
 Vue.use(Button)
@@ -37,7 +39,9 @@ Vue.use(Button)
   .use(SwipeItem)
   .use(Lazyload)
   .use(Grid)
-  .use(GridItem);
+  .use(GridItem)
+  .use(Tabbar)
+  .use(TabbarItem);
 
 //将http挂载在Vue的prototype上
 Vue.prototype.$http = http;
