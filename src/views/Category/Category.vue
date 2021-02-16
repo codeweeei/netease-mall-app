@@ -8,7 +8,7 @@
       <cate-slider-bar @get-list-goods="showListGoods"></cate-slider-bar>
       <!-- 右侧商品栏 -->
       <div class="listGoods clearfix">
-        <div class="good" v-for="(item,index) in goodsItem" :key="index">
+        <div class="good" v-for="(item,index) in goodsItem" :key="index" @click="itemClick(item)">
           <img :src="item.good_img" alt="">
           <p class="title">{{item.good_title}}</p>
           <p class="price">{{item.good_price}}</p>
@@ -46,6 +46,15 @@ export default {
     showListGoods(listGoods){
       // console.log("123")
       this.goodsItem = listGoods
+    },
+    //单个商品点击跳转详情页面（携带参数的路由跳转）
+    itemClick( _g ){
+      this.$router.push({
+        name:"ItemDetail",
+        params:{
+          goods_info : _g
+        }
+      })
     }
   },
 }

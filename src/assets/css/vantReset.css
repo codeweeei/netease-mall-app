@@ -28,3 +28,11 @@
   line-height: .36rem;
   white-space: nowrap;
 }
+
+/* 商品详情页加入购物车样式更改 */
+.goods_action .van-button{
+  height: 1.04rem;
+  font-size: .28rem;
+  width: 2.52rem;
+}
+

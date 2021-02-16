@@ -27,7 +27,12 @@ import {
   TabbarItem,
   Sticky,
   Sidebar,
-  SidebarItem
+  SidebarItem,
+  Sku,
+  GoodsAction,
+  GoodsActionIcon,
+  GoodsActionButton,
+  Toast
 } from "vant";
 
 Vue.use(Button)
@@ -47,10 +52,17 @@ Vue.use(Button)
   .use(TabbarItem)
   .use(Sticky)
   .use(Sidebar)
-  .use(SidebarItem);
+  .use(SidebarItem)
+  .use(Sku)
+  .use(GoodsAction)
+  .use(GoodsActionIcon)
+  .use(GoodsActionButton)
+  .use(Toast);
 
 //将http挂载在Vue的prototype上
 Vue.prototype.$http = http;
+//将toast轻提示挂载在vue实例上
+Vue.prototype.$toast = Toast;
 
 new Vue({
   router,

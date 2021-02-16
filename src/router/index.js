@@ -2,7 +2,8 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home/Home.vue";
 import Search from "../views/Search/Search.vue";
-import Category from "../views/Category/Category.vue"
+import Category from "../views/Category/Category.vue";
+import ItemDetail from "../views/ItemDetail/ItemDetail.vue";
 
 Vue.use(VueRouter);
 
@@ -21,6 +22,11 @@ const routes = [
     path: "/cateList",
     name: "Category",
     component: Category
+  },
+  {
+    path: "/item",
+    name: "ItemDetail",
+    component: ItemDetail
   }
 ];
 
