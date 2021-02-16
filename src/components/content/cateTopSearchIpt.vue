@@ -19,33 +19,43 @@ export default {
 </script>
 
 <style lang="less" scoped>
-  .cateTopSearchIpt{
+.cateTopSearchIpt{
+  display: flex;
+  align-items: center;
+  height: .88rem;
+  padding: 0 .3rem;
+  background-color: #fff;
+  position: relative;
+  .ipt{
+    width: 100%;
     display: flex;
+    flex-flow: row nowrap;
     align-items: center;
-    height: .88rem;
-    padding: 0 .3rem;
-    background-color: #fff;
-    position: relative;
-    .ipt{
-      width: 100%;
-      display: flex;
-      flex-flow: row nowrap;
-      align-items: center;
-      justify-content: center;
-      height: .56rem;
-      font-size: .28rem;
-      background-color: #ededed;
-      border-radius: .08rem;
-      .icon{
-        width: .30rem;
-        height: .30rem;
-        margin-right: .1rem;
-         /* 图片和文字水平对齐 */
-        vertical-align: middle;
-      }
-      .placeholder{
-        color: #666;
-      }
+    justify-content: center;
+    height: .56rem;
+    font-size: .28rem;
+    background-color: #ededed;
+    border-radius: .08rem;
+    .icon{
+      width: .30rem;
+      height: .30rem;
+      margin-right: .1rem;
+       /* 图片和文字水平对齐 */
+      vertical-align: middle;
+    }
+    .placeholder{
+      color: #666;
     }
   }
+  &::after{
+    content: "";
+    position: absolute;
+    background-color: #d9d9d9;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    transform-origin: 50% 100% 0;
+    bottom: 0;
+  }
+}
 </style>
